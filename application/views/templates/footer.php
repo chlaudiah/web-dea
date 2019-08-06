@@ -1,41 +1,31 @@
-<footer class="sticky-bottom footer-container" style="margin-top: 1.5rem !important;">
-    <div id="top-footer">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6" id="left">
-                <h3 class="widget-title">Social Media</h3>
-                <button type="button" class="btn-sosmed btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
-                    title="DEA on Facebook">
-                    <a href="https://www.facebook.com/DEA-Telkom-University-196704407592331/">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </button>
-                <button type="button" class="btn-sosmed btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
-                    title="DEA on Twitter">
-                    <a href="https://www.twitter.com/">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </button>
-                <button type="button" class="btn-sosmed btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
-                    title="DEA on Instagram">
-                    <a href="https://www.instagram.com/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </button>
+<footer class="sticky-bottom mt-5">
+    <div class="container">
+        <div class="d-flex flex-row-reverse mt-5 mb-5">
+            <img src="<?php echo base_url(); ?>assets/images/IconDE.png" alt="" srcset="">
+        </div>
+
+        <div class="d-flex">
+            <div class="col-sm-6 col-md-6">
+                <p class="font-weight-bold text-white">Social Media</p>
+                <img class="mr-4" src="<?php echo base_url(); ?>assets/images/fb.png" alt="fb" srcset="">
+                <img class="mr-3" src="<?php echo base_url(); ?>assets/images/tweet.png" alt="tweet" srcset="">
+                <img src="<?php echo base_url(); ?>assets/images/ig.png" alt="ig" srcset="">
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <span style="font-size: 11pt;" id="right">For more information about our Endowment Programs, contact us
-                    on:<br>
-                    Direktorat Endowment dan Alumni - Universitas Telkom,<br>
-                    Bangkit Building Floor 5th,<br>
-                    Jl. Telekomunikasi Terusan Buah Batu 40257,<br>
+            <div class="col-sm-6 col-md-6 flex-row-reverse">
+                <p class="text-white text-right">
+                    <b> Direktorat Endowment dan Alumni - Universitas Telkom, <br>
+                        Bangkit Building Floor 5th, </b> <br>
+                    Jl. Telekomunikasi Terusan Buah Batu 40257, <br>
                     Bandung, Indonesia
-                </span>
+                </p>
             </div>
         </div>
-    </div>
-    <div id="bottom-footer">
-        <small>Copyright © 2019 DEA Team</small>
+
+        <div class="text-center text-white mt-5 mb-5">
+            <p>Copyright © 2019 DEA</p>
+        </div>
     </div>
 </footer>
+<script src="<?php echo base_url(); ?>assets/js/dynamic-selection.js"></script>
 
 </html>
