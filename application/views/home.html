@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="assets/images/IconDE.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/head.css">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/foot.css">
+    <title>Add Endowmnet - DEA</title>
+</head>
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light mt-3">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/LogoDE.png" alt="logo-dea" srcset="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">HOME</a>
+                        <div class="active">&nbsp;</div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pembayaran.html">ENDOWMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item btn-group">
+                        <a id="btn-giving" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            TEL-U GIVING
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">TEL-U COFFEE</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="container text-center">
+        <p class="text-white" id="head-caption"><b>Membangun</b> masa lalu <br> untuk <b>masa depan</b></p>
+        <!-- btn-donate -->
+        <button type="button" class="btn font-weight-bold" id="btn-donate" data-toggle="modal"
+            data-target="#donate-modal">
+            DONATE
+        </button>
+        <!-- eof btn-donate -->
+        <!-- Donate Modal -->
+        <div class="modal fade" id="donate-modal" tabindex="-1" role="dialog" aria-labelledby="donate-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div id="donate-head">
+                        <h5 class="modal-title font-weight-bold">Donate</h5>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="modal-body" id="login-body">
+                            <img class="mt-5 mb-2" src="assets/images/LogoDE-2.png" alt="logo-dea" srcset="">
+                            <form id="login-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="user-id" placeholder="User ID"
+                                        required>
+                                </div>
+
+                                <button type="submit" class="btn" id="btn-login">
+                                    <a href="pembayaran.html" class="text-decoration-none" id="btn-text">Login</a>
+                                </button>
+
+                            </form>
+                        </div>
+
+                        <div class="modal-body" id="register-body">
+                            <div class="form-group d-flex justify-content-center">
+                                <select class="form-control" id="kategori">
+                                    <option value="alumni">Alumni</option>
+                                    <option value="staff">Staff</option>
+                                    <option value="dosen">Dosen</option>
+                                    <option value="mahasiswa">Mahasiswa</option>
+                                </select>
+                            </div>
+                            <!-- form alumni -->
+                            <form id="form-alumni">
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="nama" placeholder="Nama Anda"
+                                        required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="noHp" placeholder="No HP" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="prodi" placeholder="Program Studi"
+                                        required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="thnLulus" placeholder="Tahun Lulus"
+                                        required>
+                                </div>
+
+                                <button type="submit" class="btn" id="btn-register">
+                                    <a href="pembayaran.html" class="text-decoration-none" id="btn-text">Register</a>
+                                </button>
+                            </form>
+                            <!-- eof form alumni -->
+
+                            <!-- form staff -->
+                            <form id="form-staff" hidden>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="nama" placeholder="Nama Anda"
+                                        required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="noHp" placeholder="No HP" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="nipStaff" placeholder="NIP" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="lokKerja" placeholder="Lokasi Kerja"
+                                        required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="jabatanStaff" placeholder="Jabatan"
+                                        required>
+                                </div>
+
+                                <button type="submit" class="btn" id="btn-register">
+                                    <a href="pembayaran.html" class="text-decoration-none" id="btn-text">Register</a>
+                                </button>
+                            </form>
+                            <!-- eof form staff -->
+
+                            <!-- form dosen -->
+                            <form id="form-dosen" hidden>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="nama" placeholder="Nama Anda"
+                                        required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="noHp" placeholder="No HP" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="nipDosen" placeholder="NIP" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="prodiDosen"
+                                        placeholder="Program Studi" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="jabatanDosen"
+                                        placeholder="Jabatan Struktural" required>
+                                </div>
+
+                                <button type="submit" class="btn" id="btn-register">
+                                    <a href="pembayaran.html" class="text-decoration-none" id="btn-text">Register</a>
+                                </button>
+                            </form>
+                            <!-- eof form dosen -->
+
+                            <!-- form mahasiswa -->
+                            <form id="form-mahasiswa" hidden>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="nama" placeholder="Nama Anda"
+                                        required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="noHp" placeholder="No HP" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="nim" placeholder="NIM" required>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <input type="text" class="form-control" name="prodi" placeholder="Program Studi"
+                                        required>
+                                </div>
+
+                                <button type="submit" class="btn" id="btn-register">
+                                    <a href="pembayaran.html" class="text-decoration-none" id="btn-text">Register</a>
+                                </button>
+                            </form>
+                            <!-- eof form mahasiswa -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- eof Donate Modal -->
+
+        <div class="d-flex justify-content-center mb-5">
+            <div class="col-md-4 mt-5" id="donation-card">
+                <p>Total Donasi Saat Ini</p>
+                <p class="font-weight-bold" id="total-donation">Rp. 1.024.677.000</p>
+            </div>
+        </div>
+
+        <h2 id="tittle" class="font-weight-bold">Telkom University Endowment Fund</h2>
+        <p class="font-weight-bold mt-4 mb-4">
+            adalah dana yang dihimpun, diinvestasikan dan dikelola terus menerus dengan penuh tanggung
+            <br> jawab untuk mendukung dan menjamin keberanjutan kemajuan dan prestasi Universitas Telkom
+        </p>
+        <p>
+            Setiap tahun, presentase dari 'annual income return' dari investasi dan pengelolaan endowment fund,
+            <br> akan digunakan untuk mendukung kebutuhan pendanaan universitas meniliputi:
+        </p>
+
+        <div class="d-flex justify-content-center bd-highlight mb-5 mt-5">
+            <div class="p-3 bd-highlight" id="needs-card">
+                <img class="mb-3" src="assets/images/beasiswa.png" alt="beasiswa-icon" srcset="">
+                <p>Beasiswa</p>
+            </div>
+            <div class="p-3 bd-highlight" id="needs-card">
+                <img class="mb-3" src="assets/images/kerjasama.png" alt="kerjasama-icon" srcset="">
+                <p>Kerjasama</p>
+            </div>
+            <div class="p-3 bd-highlight" id="needs-card">
+                <img class="mb-2" src="assets/images/penelitian.png" alt="penelitian-icon" srcset="">
+                <p>Penelitian</p>
+            </div>
+            <div class="p-3 bd-highlight" id="needs-card">
+                <img class="mb-2" src="assets/images/infrastruktur.png" alt="infrastruktur-icon" srcset="">
+                <p>Infrastruktur</p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5">
+            <div class="card mr-3" style="width: 49%;">
+                <img src="assets/images/orang2.png" class="card-img-top" alt="news-img">
+                <div class="text-left card-body">
+                    <p style="color: red" class="font-weight-bold">Event </p>
+                    <h2>Tel-U Coffee habis dalam waktu 2 jam</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium corporis mollitia
+                        quas eius aliquid similique placeat iste, quisquam suscipit praesentium cum dicta error libero,
+                        repellat enim saepe. Ex, accusantium.
+                    </p>
+                    <button id="btn-more" class="btn font-weight-bold">More</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 49%;">
+                <img src="assets/images/orang.png" class="card-img-top" alt="news-img">
+                <div class="card-body text-left">
+                    <p style="color: red" class="font-weight-bold">Event </p>
+                    <h2>Tel-U Coffee membuka stand bersama YPT</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium corporis mollitia
+                        quas eius aliquid similique placeat iste, quisquam suscipit praesentium cum dicta error libero,
+                        repellat enim saepe. Ex, accusantium.
+                    </p>
+                    <button id="btn-more" class="btn font-weight-bold">More</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<footer class="sticky-bottom mt-5">
+    <div class="container">
+        <div class="d-flex flex-row-reverse mt-5 mb-5">
+            <img src="assets/images/IconDE.png" alt="" srcset="">
+        </div>
+
+        <div class="d-flex">
+            <div class="col-sm-6 col-md-6">
+                <p class="font-weight-bold text-white">Social Media</p>
+                <img class="mr-4" src="assets/images/fb.png" alt="fb" srcset="">
+                <img class="mr-3" src="assets/images/tweet.png" alt="tweet" srcset="">
+                <img src="assets/images/ig.png" alt="ig" srcset="">
+            </div>
+            <div class="col-sm-6 col-md-6 flex-row-reverse">
+                <p class="text-white text-right">
+                    <b> Direktorat Endowment dan Alumni - Universitas Telkom, <br>
+                        Bangkit Building Floor 5th, </b> <br>
+                    Jl. Telekomunikasi Terusan Buah Batu 40257, <br>
+                    Bandung, Indonesia
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center text-white mt-5 mb-5">
+            <p>Copyright © 2019 DEA</p>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/dynamic-selection.js"></script>
+
+</html>

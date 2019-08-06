@@ -1,0 +1,80 @@
+.crumb {
+    margin-top: 150px;
+}
+
+.required:after {
+    content: "*";
+    color: red;
+}
+
+.form-alumni {
+    display: none;
+}
+
+.line {
+    padding: 0 5em;
+    border: 1px solid black;
+}
+
+.crumb-item {
+    cursor: default;
+    text-align: center;
+    border-radius: 50%;
+    padding: 1em 1.5em;
+    border: 1px solid black;
+}
+
+.crumb-item.active {
+    cursor: default;
+    background: #d4d4d4;
+    border: 1px solid black;
+}
+
+.form-box {
+    border-radius: 2px;
+    padding: 0.5em 1em;
+    border: 1px solid black;
+}
+
+#tf-bank {
+    border: 1px solid black;
+    display: none;
+}
+
+.accordion {
+    background-color: #eee !important;
+    color: #444 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-weight: bolder !important;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.on,
+.accordion:hover {
+    background-color: #ccc !important;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777 !important;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.on:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

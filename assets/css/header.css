@@ -1,0 +1,58 @@
+*{
+    outline: none !important;
+    outline-color: transparent !important;
+    outline-style: none !important;
+    max-width: 100% !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.active{
+    background-color: #dadada
+}
+
+.navbar{
+    background: white;
+}
+
+.container-fluid, .navbar{
+    padding: 0.5em 3.5em;
+}
+
+button{
+    border: none !important;
+    background: none !important;
+}
+
+header{
+    font-size: 14px !important;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.nav-item:hover{
+    background: #dadada !important;
+    transition: 0.5s;
+}
+
+.dropdown-menu{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.dropdown-item{
+    font-size: 14px !important;
+    padding: 0.5em;
+    background: #eeeeee
+}
+
+.dropdown-item:hover{
+    background: #dadada;
+    transition: 0.5s;
+}
+
+#btn-giving:focus{
+    background: #dadada !important;
+}

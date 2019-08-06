@@ -1,0 +1,145 @@
+body {
+    background-image: url(../images/efek.png), url(../images/rektoratlama.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#amount-card {
+    -webkit-box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    -moz-box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    background-color: white;
+    padding: 1em 1em;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+#donate-head,
+#pembayaran-head {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 1em 1em;
+    color: white;
+    background-color: #e22626;
+}
+
+#donate-detail {
+    -webkit-box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    -moz-box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    background-color: white;
+    border-radius: 30px;
+    padding: 2em 7em;
+}
+
+#pembayaran-card {
+    -webkit-box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    -moz-box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    border-radius: 30px;
+    background-color: white;
+}
+
+#pembayaran-body {
+    padding: 5em 10em;
+}
+
+.modal-content {
+    border-radius: 30px;
+}
+
+#btn-login,
+#btn-register,
+#btn-submit {
+    background-color: #e22626;
+    color: white;
+    border-radius: 50px;
+}
+
+#btn-text {
+    color: white;
+}
+
+#btn-login:hover,
+#btn-register:hover {
+    background-color: #c92020;
+    color: #dbdbdb;
+}
+
+#tittle {
+    color: red;
+}
+
+#head-caption {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+#btn-donate {
+    background-color: #e22626;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 70px;
+    padding: 15px 30px;
+}
+
+#btn-donate:hover {
+    background-color: #c92020;
+    color: #dbdbdb;
+}
+
+#btn-more {
+    background-color: #e22626;
+    color: white;
+    border-radius: 50px;
+}
+
+#btn-more:hover {
+    background-color: #c92020;
+    color: #dbdbdb;
+}
+
+#btn-giving {
+    background-color: #e22626;
+    border-radius: 50px;
+}
+
+#btn-giving:hover {
+    background-color: #c92020;
+    color: #dbdbdb;
+}
+
+.dropdown-item {
+    font-size: 12px;
+}
+
+.active {
+    width: 50%;
+    height: 1px;
+    margin: 0px auto;
+    border-bottom: 2px solid #e22626;
+}
+
+#donation-card {
+    -webkit-box-shadow: 2px 3px 28px -5px rgba(97, 97, 97, 1);
+    -moz-box-shadow: 2px 3px 28px -5px rgba(97, 97, 97, 1);
+    box-shadow: 2px 3px 28px -5px rgba(97, 97, 97, 1);
+    padding: 1em 1em;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#needs-card {
+    -webkit-box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    -moz-box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    box-shadow: 2px 3px 20px -5px rgba(97, 97, 97, 1);
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+#total-donation {
+    color: #e22626;
+    font-size: 25px;
+}
